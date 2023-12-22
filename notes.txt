@@ -160,20 +160,76 @@ insertion sort :-
     [34,54,56,98,99]
 
 pass1: 
-	 34 56 76 98 99 54 32 37 6 78 9
-        j         i
+	 34 37 50 54 56 76 78 88  
+                           i          
+        j
+	 tmp = 54 
 
-	tmp = 76 
 
+	 for(i=1;i<SIZE;i++){
+		 tmp = a[i]; 
+		for(j=i-1;j>=0;j--){
+			if(tmp <  a[j]){
+				a[j+1]=a[j];	
+			}else{
+				break; 
+			} 
+		}
+		a[j+1] = tmp; 
+	 }
 
-	j+1  
-   
-
+ 
+-------------------------------------------------------------------------
 
 		
+STACK -> linear data structure 
+      -> LiFo  Last In First Out 
+	  -> Array{static} / LinkedList{dynamic} 
+	  -> is manage by TOP pointer 
+
+		add 	-> PUSH 
+		remove  -> POP
+		list    -> display 
+		top     -> PEEK 
+		location -> item -> display -> PEEP 
 
 
 
+
+	int stack[5];
+
+
+	PUSH(10)
+	PUSH(20); 
+
+	4
+	3
+    2
+	1	20 
+	0	10 
+
+	POP() -> 20 
+
+
+Q: reverse string using stack:- 
+
+enter string 
+str = royal    | ahmedabad | royal ahmedabad 
+
+push('r')
+push('o')
+push('y')
+push('a')
+push('l')
+
+layor  | dabademha | dabademha layor 
+
+---------------------------------------------------------------------------------
+Queue:- 
+		FiFo -> first in first out 
+		FCFS -> first come first serve 
+
+		
 
 
 
