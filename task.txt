@@ -23,6 +23,8 @@ Example 3:
 Input: s = "(]"
 Output: false
 
+({[ ]})  -> valid 
+
 -----------------------------------------------------------------------------------------------
 
 Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses 
