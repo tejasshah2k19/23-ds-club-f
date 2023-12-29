@@ -229,7 +229,82 @@ Queue:-
 		FiFo -> first in first out 
 		FCFS -> first come first serve 
 
-		
+
+
+---------------------------------------------------------------------------------
+static memory allocation ? 
+
+int a;  // 4 byte - scope -> program { GCC : 4byte TC:2 byte }
+
+int a[10]; // 4*10 = 40 byte 
+		//3 item -> 28 byte -> W  
+		//14 item -> ?    -> X 
+		//exact 10 item -> 4 line code ->{free-release-deallocate} 400 line 
+
+DMA -> dynamic memory allocation 
+	explicit -> allocation deallocate 
+
+	allocate ->  malloc() , calloc() 
+	release  ->  free() 
+	resize    ->  realloc() 
+
+	malloc vs calloc 
+
+	int *a;//4 byte  
+	int *x;//20 byte {array} 
+
+	single block -> malloc() 
+	same size n number of block -> calloc() 
+	
+	a = (int*) malloc(4); 
+	x = (int*) calloc(5,4); 
+
+
+    pointer variable  -> to store address 
+	variable -> to store value 
+
+	int x; 
+	x=10; 
+	int *p; 
+	p =&x;  // address of x   
+	int **z; 
+	z = &p; 
+
+	printf("%d",x); //10 
+	printf("%d",&x);//2000 
+	printf("%d",p); //2000 
+	printf("%d",&p);//4000 
+	printf("%d",*p);//10 value at p 
+
+	printf("%d",z);//4000 
+	printf("%d",&z);//6000 
+	printf("%d",*z);//2000
+	printf("%d",**z);//10 --dereference 
+
+-----------------------------------
+char name[22] 
+int maths
+int sci 
+int eng 
+float perc 
+
+
+structure => 
+
+------------------------------------
+struct student{
+	char name[22]; 
+	int maths;
+	int sci ;
+	int eng ;
+	float perc; 
+
+}s;
+
+struct student x; //usign dot operator we can access property of a structure 
+scanf("%s%d",&s.name,&s.maths); 
+
+-------------------------------------
 
 
 
@@ -237,6 +312,15 @@ Queue:-
 
 
 
+
+
+
+	
+	
+	
+	 
+	
+	
 
 
 
