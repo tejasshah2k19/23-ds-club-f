@@ -305,6 +305,84 @@ struct student x; //usign dot operator we can access property of a structure
 scanf("%s%d",&s.name,&s.maths); 
 
 -------------------------------------
+3 student 
+original data
+1) display  
+Name Maths sci Eng Perc 
+x	  55   55  55   55  
+y     65   65  65   65
+z     23   23  23   23 
+
+2) sort 
+sort by perc desc   
+y   65  65  65   65
+x	55  55  55   55  
+z   23  23  23   23 
+
+3) 
+search ->Enter name ==> p 
+	No Record Found 
+
+	
+search ->Enter name ==> z
+    z   23  23  23   23 
+
+------------------------------------------------------------------
+linked list -> 
+
+royal 
+bank 
+hospital 
+library 
+
+
+dynamic ds -> 
+	n number of books 
+		+5 , +25 , +30 , +50, -1, -2,-3 ,-10, 
+
+name:
+publish:
+year:
+author: 
+
+
+linked list -> 
+single linked list -> 
+
+[ data|9000 ]->  [ |2333]->    [ |4555 ]->       [   NULL]->X
+    7000          9000         2333               4555 
+
+start 
+first 
+head 
+
+linked list -> [] -> node
+	1) data  {int char char[] float }
+	2) next* {address of next node} 
+
+
+
+array , struct , pointer ? node ? 
+
+
+menu driven :-
+
+1) Add Node 
+2) Delete Node 
+3) List All Node 
+4) Search Node 
+5) Exit 
+
+----------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 
