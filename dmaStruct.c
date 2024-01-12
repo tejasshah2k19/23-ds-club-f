@@ -21,6 +21,7 @@ int main(){
     //s name 
     //dot operator 
     //pointer-> arrow  
+     
     
     s =  (struct student*) malloc(sizeof(struct student));//25 
     printf("\nEnter name maths sci and eng detail : ");
