@@ -387,12 +387,27 @@ z = [ 10 11 22 24 33 44  45 55 67 90 222] x+y
 ------------------------------------------------------- 
 
 
+tree -> 
+
+		non linear datastructure -> 
+
+	
+array -> 2000 2002 
+linkedlist -> 20 30 40 50 
 
 
 
 
+tree ->
+		binary tree 
 
 
+			data -> node 
+
+			node -> left , right 
+
+			
+struct -> 
 
 
 
