@@ -410,15 +410,23 @@ tree ->
 struct -> 
 
 
+10 25 6 47 85 
 
 
+binary tree ->
+		1) node max 2 child
 
 
+binary search tree -> BST 
+		1) binary tree { max 2 child }
+		2) data parent small -> left 
+		   data parent big -> right 
 
 
+BST => 25,89,74,38,9,7,58,94,37,16 
 
 
-
+-----------------------------------------------
 
 	
 	
