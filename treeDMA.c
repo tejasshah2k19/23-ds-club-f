@@ -25,55 +25,43 @@ struct node* addNode(struct node *root,int num){//100,250
     }else {
         if(root->data > num){
             //left 
-
-            tmp = root->left;//200 
-            while(tmp != NULL){
-              root = tmp; //root -> 200 
-              if(tmp->data < num){
-                tmp = tmp->right; 
-              } else{
-                tmp = tmp->left; 
-              } 
-            } 
-
-            //new node 
-            if(num < root->data){
-                //left 
-                tmp = createNode(num);
-                root->left = tmp; 
-            }else{
-                //right
-                tmp = createNode(num);
-                root->right = tmp; 
-            }
-     
+          root->left = addNode(root->left,num);
         }else if(root->data < num){
-            //right 
-            tmp = root->right;//200 
-            while(tmp != NULL){
-              root = tmp; //root -> 200 
-              if(tmp->data < num){
-                tmp = tmp->right; 
-              } else{
-                tmp = tmp->left; 
-              } 
-            } 
-
-            //new node 
-            if(num < root->data){
-                //left 
-                tmp=createNode(num);
-                root->left = tmp; 
-            }else{
-                //right
-                tmp=createNode(num);
-                root->right = tmp; 
-            }
+           root->right = addNode(root->right,num);
         }
     }
-
     return root;
 }
+
+void inOrder(struct node *root){
+
+    if(root != NULL){ 
+        inOrder(root->left);
+        printf(" %d",root->data);
+        inOrder(root->right);
+    }
+}
+
+void preOrder(struct node *root){
+
+    if(root != NULL){ 
+        printf(" %d",root->data);
+        preOrder(root->left);
+        preOrder(root->right);
+    }
+}
+
+
+void postOrder(struct node *root){
+
+    if(root != NULL){ 
+        postOrder(root->left);
+        postOrder(root->right);
+        printf(" %d",root->data);
+    }
+}
+
+
 int main(){
 
     int i; 
@@ -91,6 +79,8 @@ int main(){
         root = addNode(root,num);//100  150 250 
     }
 
+
+    inOrder(root); 
 
     return 0; 
 }

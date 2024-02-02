@@ -430,7 +430,11 @@ BST => 25,89,74,38,9,7,58,94,37,16
 
 	
 	
-	
+	tree travel-> 
+			inOrder  -> left - root - right 
+			preOrder -> root - left - right 
+			postOrder -> left - right - root 
+			
 	 
 	
 	

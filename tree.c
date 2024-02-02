@@ -36,7 +36,7 @@ int main(){
 
     printf("\n Root Right => %d",root->right->data);
     
-
+    
 
     return 0;
 }
