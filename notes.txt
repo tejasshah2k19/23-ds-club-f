@@ -440,6 +440,85 @@ BST => 25,89,74,38,9,7,58,94,37,16
 	
 
 
+1 2 3 4 5 6 7
+
+
+		1 
+			2 
+				3
+					4
+						5
+							6
+								7 
+height ->  7 
+level ->   6
+
+		BST ->  height? 
+
+		Binary Tree -> BST -> height ? 
+		rotate! 
+
+		height balanced tree - AVL Tree 
+
+
+1) LL 
+2) RR 
+3) LR 
+4) RL 
+
+1) left rotate 
+2) right rotate 
+
+
+
+BalanceFactor -> node  { -1 0 1 } : valid 
+
+
+BF(node) = height(node->left) - height(node->right)
+--------------------------------------------------------------------
+
+ 
+	10							20
+		20		----->		10		20 
+			30 	
+	RR imbalance -> Left rotate 
+
+
+		30					20
+	20			----> 	10		30 
+10
+	LL imbalance -> Right rotate 	
+
+
+	  
+	20					20							25
+			30   --> 		25       --->  
+	25   						30 			20				30 
+	RL  imbalance ->  Right - Left  
+
+
+
+	30
+							30					25
+20 			-->			25			----> 20			30 
+
+    25				20
+LR imbalance -> Left Right 
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
